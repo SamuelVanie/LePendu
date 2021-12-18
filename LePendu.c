@@ -38,12 +38,14 @@ int main(int argc, char *argv[])
         if(gagne)
         {
             printf("Vous avez gagne en %d coups\n", nombreDeCoups);
+            printf("Le mot était %s\n", mot);
             free(copieMot);
         }
     }
     if(coupsRestant == 0)
     {
         puts("Vous avez perdu");
+        printf("Le mot était %s\n", mot);
         free(copieMot);
     }
     return 0;
